@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HotelBook | Вхід</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script src="JS/app.js" defer></script>
+</head>
+<body>
+<div class="page-shell">
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html"><span class="brand-mark">HB</span><span>HotelBook</span></a>
+    <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>Меню</button>
+    <nav class="site-nav" data-nav-menu>
+      <a href="index.html">Головна</a>
+      <a href="index.html#destinations">Напрямки</a>
+      <a href="index.html#about">Про нас</a>
+      <a href="index.html#contacts">Контакти</a>
+    </nav>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+<main>
+
+<section class="auth-section">
+  <div class="container auth-wrap">
+    <div class="auth-card">
+      <p class="eyebrow">Авторизація</p>
+      <h1>Вхід до системи</h1>
+      <p class="muted">Увійдіть як гість або адміністратор, щоб продовжити роботу.</p>
+      <form class="auth-form" id="login-form">
+        <label><span>Email</span><input type="email" name="email" value="admin@hotel.local" required></label>
+        <label><span>Пароль</span><input type="password" name="password" value="admin123" required></label>
+        <button class="button" type="submit">Увійти</button>
+      </form>
+      <p class="auth-note">Ще немає акаунта? <a href="register.html">Зареєструйтесь</a></p>
+      <p class="muted" style="margin-top:16px;font-size:.9rem">Демо-адмін: admin@hotel.local / admin123</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-mark">HB</span><span>HotelBook</span></div>
+      <p>Сервіс для бронювання номерів у готелі з простим особистим кабінетом і зручною адмін-панеллю.</p>
+    </div>
+    <div>
+      <h4>Компанія</h4>
+      <a href="index.html#about">Про нас</a>
+      <a href="index.html#destinations">Напрямки</a>
+      <a href="register.html">Реєстрація</a>
+    </div>
+    <div>
+      <h4>Користувачам</h4>
+      <a href="login.html">Вхід</a>
+      <a href="index.html#search">Пошук номерів</a>
+      <a href="bookings.html">Мої бронювання</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <p>Київ, Україна</p>
+      <p>+380 44 000 00 00</p>
+      <p>hotelbook@example.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 HotelBook. Всі права захищені.</div></div>
+</footer>
+</div>
+</body>
+</html>
