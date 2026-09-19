@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "room_id": 1,
+    "room_number": "101",
+    "room_type": "Standart",
+    "nightly_price": 1200,
+    "capacity": 2,
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "room_id": 2,
+    "room_number": "102",
+    "room_type": "Standart",
+    "nightly_price": 1350,
+    "capacity": 3,
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "room_id": 3,
+    "room_number": "103",
+    "room_type": "Standart",
+    "nightly_price": 1450,
+    "capacity": 4,
+    "status": "available"
+  },
+  {
+    "id": 4,
+    "room_id": 4,
+    "room_number": "201",
+    "room_type": "Lux",
+    "nightly_price": 2400,
+    "capacity": 2,
+    "status": "available"
+  },
+  {
+    "id": 5,
+    "room_id": 5,
+    "room_number": "202",
+    "room_type": "Lux",
+    "nightly_price": 2700,
+    "capacity": 3,
+    "status": "available"
+  },
+  {
+    "id": 6,
+    "room_id": 6,
+    "room_number": "203",
+    "room_type": "Lux",
+    "nightly_price": 3100,
+    "capacity": 4,
+    "status": "available"
+  },
+  {
+    "id": 7,
+    "room_id": 7,
+    "room_number": "301",
+    "room_type": "Deluxe",
+    "nightly_price": 3900,
+    "capacity": 2,
+    "status": "available"
+  },
+  {
+    "id": 8,
+    "room_id": 8,
+    "room_number": "302",
+    "room_type": "Deluxe",
+    "nightly_price": 4300,
+    "capacity": 3,
+    "status": "available"
+  },
+  {
+    "id": 9,
+    "room_id": 9,
+    "room_number": "401",
+    "room_type": "Family",
+    "nightly_price": 3600,
+    "capacity": 5,
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "room_id": 10,
+    "room_number": "402",
+    "room_type": "Family",
+    "nightly_price": 4100,
+    "capacity": 6,
+    "status": "available"
+  },
+  {
+    "id": 11,
+    "room_id": 11,
+    "room_number": "501",
+    "room_type": "Suite",
+    "nightly_price": 5200,
+    "capacity": 2,
+    "status": "available"
+  },
+  {
+    "id": 12,
+    "room_id": 12,
+    "room_number": "502",
+    "room_type": "Suite",
+    "nightly_price": 5900,
+    "capacity": 4,
+    "status": "available"
+  }
+]

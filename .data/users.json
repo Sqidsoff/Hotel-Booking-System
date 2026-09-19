@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "full_name": "Administrator",
+    "phone": "",
+    "document": "",
+    "email": "admin@hotel.local",
+    "password_hash": "42af9ae1921611a75c16b88c2279b4c8:0e3ac88c06cd921e325ec5877b4f916cf8f677216297d487da7827a1521453ae6765447cc58370d3591cb4fbfb0a13085a070fb5f62641b86f81e1b438838652",
+    "role_code": "admin",
+    "created_at": "2026-09-19T13:27:29.132Z"
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "full_name": "Demonnuch",
+    "phone": "123",
+    "document": "231",
+    "email": "umnijnosok@gmail.com",
+    "password_hash": "41bae6a9d7aff09a10c30523a09b026a:7563a65f98dd56afcb1c44124fd386cec6d6549acd42f356a50ada4a262a5d1940a4b831499906df0d9d4f69471c5581589b36a7cd7973834622a27fec3a8fc5",
+    "role_code": "guest",
+    "created_at": "2026-09-19T13:27:43.334Z"
+  }
+]
