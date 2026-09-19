@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 const path = require('path');
 
 const app = express();
-const PUBLIC_DIR = path.join(__dirname, 'public');
+const PUBLIC_DIR = path.join(__dirname);
 
 app.use(express.json());
 
