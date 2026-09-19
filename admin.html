@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HotelBook | Адмін-панель</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script type="module" src="JS/app.js"></script>
+</head>
+<body>
+<div class="page-shell">
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html"><span class="brand-mark">HB</span><span>HotelBook</span></a>
+    <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>Меню</button>
+    <nav class="site-nav" data-nav-menu>
+      <a href="index.html">Головна</a>
+      <a href="index.html#destinations">Напрямки</a>
+      <a href="index.html#about">Про нас</a>
+      <a href="index.html#contacts">Контакти</a>
+    </nav>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+<main>
+
+<section class="dashboard-section">
+  <div class="container" data-admin-page>
+    <div class="section-heading"><div><p class="eyebrow">Адміністрування</p><h1>Панель керування</h1></div></div>
+
+    <div class="stat-grid">
+      <div class="stat-card"><span>Номерів</span><strong id="stat-rooms">0</strong></div>
+      <div class="stat-card"><span>Активні броні</span><strong id="stat-bookings">0</strong></div>
+      <div class="stat-card"><span>Гостей</span><strong id="stat-guests">0</strong></div>
+      <div class="stat-card"><span>Оплачено</span><strong id="stat-paid">0.00 грн</strong></div>
+    </div>
+
+    <div class="admin-block">
+      <div class="admin-block-head"><h2>Бронювання</h2></div>
+      <div class="table-card">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Гість</th><th>Номер</th><th>Період</th><th>Статус</th><th>Сума</th><th>Дія</th></tr></thead>
+          <tbody id="admin-bookings-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="admin-block">
+      <div class="admin-block-head"><h2>Номери</h2></div>
+      <div class="table-card">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Номер</th><th>Тип</th><th>Ціна</th><th>Статус</th><th>Дія</th></tr></thead>
+          <tbody id="admin-rooms-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="admin-layout">
+      <div class="panel-card">
+        <h2>Додати платіж</h2>
+        <form method="post" class="panel-form" id="payment-form">
+          <label><span>Booking ID</span><input type="number" name="booking_id" min="1" required></label>
+          <label><span>Сума</span><input type="number" name="amount" min="0" step="0.01" required></label>
+          <label><span>Метод</span><select name="method" required><option value="card">card</option><option value="cash">cash</option><option value="transfer">transfer</option></select></label>
+          <label><span>Статус</span><select name="status" required><option value="paid">paid</option><option value="pending">pending</option><option value="failed">failed</option><option value="refunded">refunded</option></select></label>
+          <button class="button" type="submit">Додати платіж</button>
+        </form>
+      </div>
+
+      <div class="panel-card">
+        <h2>Платежі</h2>
+        <div class="table-card compact-table">
+          <table class="data-table">
+            <thead><tr><th>ID</th><th>Booking</th><th>Сума</th><th>Метод</th><th>Статус</th></tr></thead>
+            <tbody id="admin-payments-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-mark">HB</span><span>HotelBook</span></div>
+      <p>Сервіс для бронювання номерів у готелі з простим особистим кабінетом і зручною адмін-панеллю.</p>
+    </div>
+    <div>
+      <h4>Компанія</h4>
+      <a href="index.html#about">Про нас</a>
+      <a href="index.html#destinations">Напрямки</a>
+      <a href="register.html">Реєстрація</a>
+    </div>
+    <div>
+      <h4>Користувачам</h4>
+      <a href="login.html">Вхід</a>
+      <a href="index.html#search">Пошук номерів</a>
+      <a href="bookings.html">Мої бронювання</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <p>Київ, Україна</p>
+      <p>+380 44 000 00 00</p>
+      <p>hotelbook@example.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 HotelBook. Всі права захищені.</div></div>
+</footer>
+</div>
+</body>
+</html>

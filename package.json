@@ -1,0 +1,17 @@
+{
+  "name": "teamexam",
+  "version": "1.0.0",
+  "description": "Це повністю standalone-версія шаблонів без Flask/Jinja2/Next.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

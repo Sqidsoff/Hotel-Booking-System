@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HotelBook | Головна</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script type="module" src="JS/app.js"></script>
+</head>
+<body>
+<div class="page-shell">
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html"><span class="brand-mark">HB</span><span>HotelBook</span></a>
+    <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>Меню</button>
+    <nav class="site-nav" data-nav-menu>
+      <a href="index.html">Головна</a>
+      <a href="index.html#destinations">Напрямки</a>
+      <a href="index.html#about">Про нас</a>
+      <a href="index.html#contacts">Контакти</a>
+    </nav>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+<main>
+
+<section class="hero-section">
+  <div class="hero-image"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">Система бронювання готелю</p>
+      <h1>Знайдіть номер, який підходить саме Вам</h1>
+      <p>Оберіть дати, перевірте доступність номерів і оформіть бронювання без зайвих кроків.</p>
+    </div>
+    <form class="search-panel" method="get" action="index.html" id="search-form">
+      <div class="field-grid">
+        <label><span>Тип номеру</span><input type="text" name="destination" placeholder="Наприклад: Lux або 101"></label>
+        <label><span>Дата заїзду</span><input id="check-in" type="date" name="check_in" required></label>
+        <label><span>Дата виїзду</span><input id="check-out" type="date" name="check_out" required></label>
+        <label><span>Дорослі</span><input type="number" name="adults" min="1" value="1" required></label>
+        <label><span>Діти</span><input type="number" name="children" min="0" value="0" required></label>
+      </div>
+      <button class="button hero-button" type="submit">Знайти номери</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section-results">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">Пошук</p><h2>Доступні номери</h2></div>
+      <p class="muted" id="results-count"></p>
+    </div>
+    <div id="rooms-empty" class="empty-state"></div>
+    <div id="rooms-container" class="room-grid"></div>
+  </div>
+</section>
+
+<section class="section" id="destinations">
+  <div class="container">
+    <div class="section-heading centered">
+      <p class="eyebrow">Популярні напрямки</p>
+      <h2>Оберіть місце для відпочинку або відрядження</h2>
+      <p class="muted">Добірка напрямків для демонстрації головної сторінки сервісу.</p>
+    </div>
+    <div class="destination-grid">
+      <article class="destination-card"><div><h3>Київ</h3><p>24 номери</p></div></article>
+      <article class="destination-card"><div><h3>Стамбул</h3><p>18 номерів</p></div></article>
+      <article class="destination-card"><div><h3>Париж</h3><p>31 номер</p></div></article>
+      <article class="destination-card"><div><h3>Лондон</h3><p>27 номерів</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light" id="about">
+  <div class="container">
+    <div class="section-heading centered"><p class="eyebrow">Чому обирають нас</p><h2>Простий сервіс без зайвої складності</h2></div>
+    <div class="feature-grid">
+      <article class="feature-card"><div class="feature-icon">01</div><h3>Швидке бронювання</h3><p>Користувач бачить доступність номерів і одразу створює бронювання.</p></article>
+      <article class="feature-card"><div class="feature-icon">02</div><h3>Готелі у популярних містах</h3><p>Обирайте номери в Лондоні, Стамбулі, Києві, Парижі та інших містах.</p></article>
+      <article class="feature-card"><div class="feature-icon">03</div><h3>Зручний пошук</h3><p>Легко знаходьте потрібний номер за датою, містом, кількістю гостей та типом номера.</p></article>
+      <article class="feature-card"><div class="feature-icon">04</div><h3>Усе необхідне в одному місці</h3><p>Інформація про номер, ціна, доступність та бронювання доступні на одній платформі.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading centered"><p class="eyebrow">Відгуки</p><h2>Що говорять користувачі</h2></div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card"><div class="stars">★★★★★</div><p>“Зручний пошук і дуже просте бронювання.”</p><strong>Олена</strong><span> Київ</span></article>
+      <article class="testimonial-card"><div class="stars">★★★★★</div><p>“Усе необхідне для швидкого вибору номера.”</p><strong>Максим</strong><span> Львів</span></article>
+      <article class="testimonial-card"><div class="stars">★★★★★</div><p>“Особистий кабінет дозволяє легко переглядати бронювання.”</p><strong>Анна</strong><span> Одеса</span></article>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-mark">HB</span><span>HotelBook</span></div>
+      <p>Сервіс для бронювання номерів у готелі з простим особистим кабінетом і зручною адмін-панеллю.</p>
+    </div>
+    <div>
+      <h4>Компанія</h4>
+      <a href="index.html#about">Про нас</a>
+      <a href="index.html#destinations">Напрямки</a>
+      <a href="register.html">Реєстрація</a>
+    </div>
+    <div>
+      <h4>Користувачам</h4>
+      <a href="login.html">Вхід</a>
+      <a href="index.html#search">Пошук номерів</a>
+      <a href="bookings.html">Мої бронювання</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <p>Київ, Україна</p>
+      <p>+380 44 000 00 00</p>
+      <p>hotelbook@example.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 HotelBook. Всі права захищені.</div></div>
+</footer>
+</div>
+</body>
+</html>
