@@ -287,8 +287,19 @@ button {
 }
 .field-grid {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  gap: 14px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.field-grid label:first-child {
+  grid-column: 1 / -1;
+}
+
+.field-grid label:nth-child(4) {
+  grid-column: 1 / -1;
+}
+
+.field-grid label:nth-child(5) {
+  grid-column: 1 / -1;
 }
 .field-grid label, .auth-form label, .panel-form label {
   display: flex;
