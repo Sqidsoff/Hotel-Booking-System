@@ -11,8 +11,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(PUBLIC_DIR, 'index.html'));
 });
 
-app.use(express.static(PUBLIC_DIR));
-//app.use('/api', routes);
+app.use(express.static(PUBLIC_DIR, {
+    extensions: ['html'],
+}));
 
 app.use('/api', (req, res) => {
     res.status(404).json({
