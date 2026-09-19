@@ -463,6 +463,18 @@ textarea:focus {
 
   transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
+.destination-card:first-child {
+  background-image:linear-gradient(180deg,rgba(43,33,24,.05),rgba(43,33,24,.82)),url("../images/Kyiv.jpg")
+}
+.destination-card:nth-child(2) {
+  background-image:linear-gradient(180deg,rgba(43,33,24,.05),rgba(43,33,24,.82)),url("../images/Istanbul.jpg")
+}
+.destination-card:nth-child(3) {
+  background-image:linear-gradient(180deg,rgba(43,33,24,.05),rgba(43,33,24,.82)),url("../images/Paris.jpg")
+}
+.destination-card:nth-child(4) {
+  background-image:linear-gradient(180deg,rgba(43,33,24,.05),rgba(43,33,24,.82)),url("../images/London.jpg")
+}
 .destination-card:hover {
   transform: scale(1.1);
 }
